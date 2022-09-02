@@ -1,0 +1,318 @@
+:root {
+--lunghezza: 7vh;
+}
+
+
+:root{
+    --larghezzaMargini: 0.6vw;
+}
+
+:root{
+    --lunghezzaMargini: 0.6vh;
+}
+
+:root {
+    --sfondoColore: black;
+}
+:root{
+    --contenitoreColore: rgba(255, 255, 255, 0.5)
+}
+
+:root{
+    --textColor: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(Assets/sfondo.jpg);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: cover;  
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: var(--textColor);
+}
+
+.startGame {
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    background-color: var(--contenitoreColore);
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.startText {
+    font-size: 5vh;
+    background-color: black;
+    border-radius: 16px;
+    color: var(--textColor);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+
+.containerStart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.startNames {
+    background-color: white;
+    border-radius: 8px;
+    height: var(--lunghezza);
+    width: calc(var(--lunghezza) * 4.3);
+    margin-left: calc(var(--larghezzaMargini) * 5);
+    margin-right: calc(var(--larghezzaMargini) * 3);
+    margin-top: var(--lunghezzaMargini);
+    position: relative;
+    color: var(--sfondoColore);
+    font-size: calc(var(--lunghezza) / 2);
+    border: solid black;
+    box-shadow: 3px 3px 3px var(--sfondoColore);
+}
+
+.startNames:focus {
+    outline-style: none;
+}
+
+::placeholder{
+    color: rgb(149, 149, 149);
+}
+
+.start {
+    background-color: var(--sfondoColore);
+    border-radius: 8px;
+    height: var(--lunghezza);
+    width: calc(var(--lunghezza) * 2);
+    margin-left: calc(var(--larghezzaMargini) * 3);
+    margin-right: calc(var(--larghezzaMargini) * 3);
+    margin-top: var(--lunghezzaMargini);
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--textColor);
+    font-size: calc(var(--lunghezza) / 2);
+    
+}
+
+main {
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    margin: auto;
+    width: 80vw;
+    height: 25vh;
+    background-color: var(--contenitoreColore);
+    border-radius: 16px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 3vh;
+    background-color: var(--sfondoColore);
+    height: calc(var(--lunghezza) / 2.1);
+    width: calc(var(--lunghezza) * 2);
+    border-radius: 4px;
+    text-align: center;
+    margin-left: calc(var(--larghezzaMargini) * 3);
+    margin-right: calc(var(--larghezzaMargini) * 3);
+    
+}
+
+
+
+.gameSet{
+    font-size: 2.3vh;
+    background-color: var(--sfondoColore);
+    height: calc(var(--lunghezza) / 2.5);
+    width: var(--lunghezza);
+    border-radius: 4px;
+    margin-left: var(--larghezzaMargini);
+    margin-right: var(--larghezzaMargini);
+    text-align: center;
+    margin-top: var(--lunghezzaMargini);
+}
+
+.set {
+    background-color: var(--sfondoColore);
+    border-radius: 8px;
+    height: calc(var(--lunghezza) * 2);
+    width: var(--lunghezza);
+    position: relative;
+    margin-left: var(--larghezzaMargini);
+    margin-right: var(--larghezzaMargini);
+    margin-top: var(--lunghezzaMargini);
+    
+}
+
+.setText {
+    font-size: calc(var(--lunghezza) * 2);
+}
+
+.gameText {
+    font-size: var(--lunghezza);
+}
+
+.game {
+    background-color: var(--sfondoColore);
+    border-radius: 8px;
+    height: var(--lunghezza);
+    width: var(--lunghezza);
+    position: relative;
+    margin-left: var(--larghezzaMargini);
+    margin-right: var(--larghezzaMargini);
+    margin-top: var(--lunghezzaMargini);
+}
+
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.buttons {
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    margin: auto;
+    width: 80vw;
+    height: 17.5vh;
+    background-color: var(--contenitoreColore);
+    border-radius: 16px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;     
+}
+
+.points{
+    background-color: transparent;
+    background-image: url(Assets/Button.png);
+    border-radius: 8px;
+    height: calc(var(--lunghezza) * 1.8);
+    width: calc(var(--lunghezza) * 2);
+    margin-left: calc(var(--larghezzaMargini) * 3);
+    margin-right: calc(var(--larghezzaMargini) * 3);
+    margin-top: var(--lunghezzaMargini);
+    position: relative;
+    top: 2%;
+    background-repeat: no-repeat;
+    background-size: 103% 100%;
+    background-image: transparent;
+    color: var(--textColor);
+    box-shadow: 5px 5px 5px var(--sfondoColore);
+
+
+}
+
+.pButtons{
+    top: 63%;
+    font-size: calc(var(--lunghezza) / 1.5);
+    left: 52%;
+}
+
+.adj {
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    margin: auto;
+    width: 80vw;
+    height: 12vh;
+    background-color: var(--contenitoreColore);
+    border-radius: 16px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    display: none;
+}
+
+.adjustments {
+    background-color: var(--sfondoColore);
+    border-radius: 8px;
+    height: var(--lunghezza);
+    width: calc(var(--lunghezza) * 2);
+    margin-left: calc(var(--larghezzaMargini) * 3);
+    margin-right: calc(var(--larghezzaMargini) * 3);
+    margin-top: var(--lunghezzaMargini);
+    position: relative;
+    color: var(--textColor);
+    font-size: calc(var(--lunghezza) / 2);
+    top: 5%;
+    
+}
+
+.endgame {
+    padding-left: 1vw;
+    padding-top: 43vh;
+    margin: auto;
+    width: 80vw;
+    height: 62vh;
+    background-color: var(--contenitoreColore);
+    border-radius: 16px;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+}
+
+.endgameText {
+    font-size: 5vh;
+    text-align: center;
+    background-color: black;
+    border-radius: 16px;
+    color: var(--textColor);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.appear{
+    display: flex;
+}
+
+.disappear{
+    display: none;
+}

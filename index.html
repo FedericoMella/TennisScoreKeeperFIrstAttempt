@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>Tennis Score</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Assets/tennis logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container startGame">
+        <p class="startText">Choose your names</p>
+        <form class="containerStart" action="index.html" method="get">
+            <input class="startNames Pl1" type="text" maxlength="10" minlength="1" required placeholder="Player1">
+            <input class="startNames Pl2" type="text" maxlength="10" minlength="1" required placeholder="Player2">
+            <input class="start" type="submit" value="Start">
+        </form>
+    </div>
+    <main>
+        <div class="container">
+            <div class="title pla1"></div>
+            <div class="title pla2"></div>
+        </div>
+        <!-- sezione set e game -->
+        <div class="container">
+            <div class="gameSet">Set</div>
+            <div class="gameSet">Game</div>            
+            <div class="gameSet">Game</div>            
+            <div class="gameSet">Set</div>            
+        </div>
+            <!-- sezione Player1 -->
+        <div class="container">
+            <div class="set">
+                <p class="setText set1"></p>
+            </div>
+            <div class="game">
+                <p class="gameText game1"></p>
+            </div>             
+       
+            <!-- sezione Player2 --> 
+            <div class="game">
+                <p class="gameText game2"></p>
+            </div>
+            <div class="set">
+                <p class="setText set2"></p>
+            </div>
+        </div>               
+    </main>
+
+    <div class="container buttons">
+        <button class="points P1"><p class="pButtons B1"></p></button>
+        <button class="points P2"><p class="pButtons B2"></p></button>
+    </div>
+    <div class="container adj">
+        <button class="adjustments back">Back</button>
+        <button class="adjustments restart">Restart</button>
+    </div>
+    <div class="container endgame">
+        <p class="endgameText"></p>
+        <button class="adjustments restart end">Restart</button>
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
